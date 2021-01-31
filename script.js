@@ -8,7 +8,6 @@ var user = {
 	'answers': []
 };
 
-
 var ctx = document.getElementById('pie').getContext('2d');
 
 var data = {

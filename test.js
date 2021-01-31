@@ -4,16 +4,6 @@ var a = [["learning about the lives of plants and animals.", ["Biology"]],["Less
 
 var test = [];
 
-// let ans = "String[][][] arr = {";
-// a.forEach((b)=> {
-// 	if (b[0] === undefined) return;
-// 	let s = "";
-// 	for (let i=0; i<b[1].length; i++) s += `"${b[1][i]}",`;
-// 	ans += `{{"${b[0]}"}, {${s}}},`;
-// });
-// ans += '}';
-
-console.log(ans)
 a.forEach((b) => {
 	if (b[0] === undefined) return;
 	test.push({
