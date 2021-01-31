@@ -1,4 +1,7 @@
-<center><img src="https://github.com/Hereugo/JQB/blob/main/logo.jpg" width="100" height="100"/></center>
+<p align="center">
+  <img src="https://github.com/Hereugo/JQB/blob/main/logo.jpg" width="100" height="100"/>
+</p>
+
 # JQB
 Recommends students their dream jobs.
 
