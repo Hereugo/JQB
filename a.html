@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Finder</title>
+	<link rel="icon" href="./logo.jpg"/>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'San Francisco Text Light';
+			font-size: 17px;
+		}
+		button {
+			padding: 0.24em 0;
+			font-family: 'San Francisco Text Light';
+			font-size: 17px;
+			width: 20em;
+			background-color: white;
+			border: 1px solid black;
+			transition: 200ms ease;
+		}
+		button:hover {
+			background-color: '#BBCDE5';
+		}
+		.main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 1.5rem;
+			padding: 0.5rem 0;
+		}
+
+		.unselectable {
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -ms-user-select: none;
+		    user-select: none;
+		}
+		.container {
+			width: 100%;
+			display: none;
+			flex-direction: column;
+			align-items: center;
+		}
+		.choice {
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		.choice-item {
+			margin-top: 0.5em;
+		}
+		.title {
+			font-size: 44px;
+			padding: 0;
+			margin: 0;
+		}
+		.pie-container {
+			width: 70%;
+		}
+		.notify-container {
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+
+			display: flex;
+			flex-direction: column;
+
+		}
+		.notification {
+			background-color: black;
+			opacity: 0.8;
+			color: white;
+			padding: 0.8em;
+			margin: 0.2em 0.5em;
+			border-radius: 5px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			max-width: 200px;
+		}
+		.notification p {
+			margin: 0;
+			font-size: 14px;
+			text-align: center;
+		}
+		.notification span {
+			margin-left: auto;
+		}
+		.recommend-container {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+			max-height: 600px;
+			width: 100%;
+			padding-bottom: 2em;
+		}
+		#recommend {
+			width: auto;
+			display: flex;
+			flex-direction: column;
+			flex-flow: wrap;
+			max-height: 600px;
+			justify-content: space-around;
+		}
+		.rec {
+			width: 15em;
+		}
+		@keyframes MT{
+			0%{
+				opacity: 0.8;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
+		@font-face {
+			font-family: 'San Francisco Text Light';
+			src: url('SFUIText-Light.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<div class="notify-container">
+	</div>
+	<div class="main">
+		<p class="title"> JQB </p>
+		<p> A site for you to find your best profession in the future!</p>
+		<div class="pie-container"><canvas id="pie"></canvas></div>
+		<button class="start-test"> Start test </button>
+		<div class="container">
+			<p class="question"></p>
+			<ul class="choice">
+				<li class="choice-item"><button>Really interested</button></li>		
+				<li class="choice-item"><button>Maybe</button></li>
+				<li class="choice-item"><button>Can't decied</button></li>
+				<li class="choice-item"><button>Kinda</button></li>
+				<li class="choice-item"><button>Not interested</button></li>
+			</ul>
+			<p class="numquestions"></p>
+		</div>
+	</div>
+	<div class="recommend-container">
+		<p class="title" style="font-size: 30px"> Recommended Jobs </p>
+		<ul class="choice" id="recommend">
+		</ul>
+	</div>
+	<script src="./test.js"></script>
+	<script src="./aaaa.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>
