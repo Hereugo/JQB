@@ -1,5 +1,5 @@
+<img src="https://github.com/Hereugo/JQB/blob/main/logo.jpg" width="250" height="250"/>
 # JQB
-![JQB logo](https://github.com/Hereugo/JQB/blob/main/logo.jpg | width=250)
 Recommends students their dream jobs.
 
 # Link
