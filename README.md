@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/Hereugo/JQB/blob/main/logo.jpg" width="100" height="100"/>
-  Recommends students their dream jobs.
 </p>
+<p align="center>Recommends students their dream jobs.</p>
 
 # Link
 # Description
