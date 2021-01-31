@@ -1,5 +1,5 @@
 # JQB
-![JQB logo](https://github.com/Hereugo/JQB/blob/main/logo.jpg)
+![JQB logo](https://github.com/Hereugo/JQB/blob/main/logo.jpg =250x250)
 Recommends students their dream jobs.
 
 # Link
